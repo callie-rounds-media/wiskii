@@ -3,434 +3,181 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WISKII x Callie Rounds | Collaboration Proposal</title>
-<meta name="description" content="A collaboration proposal for WISKII from Callie Rounds.">
+<title>WISKII x Callie Rounds</title>
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;1,6..12,400&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        choc: '#553D2F', chocline: '#6A584D', capri: '#E2EFF8', sea: '#4A6A67',
-        ink: '#1C1C1C', mist: '#EFEFEF', ivory: '#F7F3EC', butter: '#F7F297'
-      },
-      fontFamily: {
-        head: ['Montserrat', 'sans-serif'],
-        body: ['"Nunito Sans"', 'sans-serif']
-      },
-      maxWidth: { container: '1200px' }
-    }
-  }
-}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&display=swap" rel="stylesheet">
 <style>
-  :root{--choc:#553D2F;--capri:#E2EFF8;--sea:#4A6A67;--ink:#1C1C1C;--ivory:#F7F3EC;--chocline:#6A584D}
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  html{overflow-x:hidden}
-  body{overflow-x:clip}
-  body{margin:0;background:var(--ivory);color:var(--ink);font-family:"Nunito Sans",sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
-  img{display:block;max-width:100%}
-  section[id]{scroll-margin-top:56px}
+:root{--choc:#553D2F;--capri:#E2EFF8;--sea:#4A6A67;--ink:#1C1C1C;--ivory:#F7F3EC}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font:300 17px/1.65 "Nunito Sans",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.h{font-family:Montserrat,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.2em;line-height:1.35}
+.k{font-family:Montserrat,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:11px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
 
-  /* WISKII heading system: Montserrat 500, uppercase, 0.2em tracking */
-  .h{font-family:Montserrat,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.2em;line-height:1.35}
-  .kicker{font-family:Montserrat,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.24em;font-size:11px}
-  .btn{display:inline-block;font-family:Montserrat,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.16em;font-size:12px;padding:15px 28px;border-radius:0;background:var(--ink);color:#fff;text-decoration:none;transition:background .2s}
-  .btn:hover{background:var(--sea)}
-  .rule{width:48px;height:1px;background:currentColor;opacity:.5}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;padding:0;color:#fff}
+.hero .bg{position:absolute;inset:0}
+.hero .bg picture{display:block;width:100%;height:100%}
+.hero .bg img{object-position:center 20%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(28,22,18,.72) 0%,rgba(28,22,18,.15) 55%,rgba(28,22,18,.25) 100%)}
+.hero .in{position:relative;z-index:1;padding:0 24px 72px;max-width:1120px;margin:0 auto;width:100%}
+.hero h1{font-size:clamp(28px,5.4vw,58px);margin:18px 0 18px}
+.hero p{max-width:520px;font-size:18px;opacity:.92}
+.top{position:absolute;top:0;left:0;right:0;z-index:2;padding:22px 24px;display:flex;justify-content:space-between;color:#fff}
 
-  /* warm, film-like treatment so Callie's photos sit in WISKII's world */
-  .film{filter:saturate(.88) sepia(.12) contrast(.97) brightness(1.02)}
-  .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.10;mix-blend-mode:multiply;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-  .ph{position:relative;overflow:hidden;width:100%}
-  .ph img{width:100%;height:100%;object-fit:cover}
-  /* NOTE: ratio boxes use width:100% so grid items never collapse to 0 width (see memory media-kit-2026) */
+/* intro */
+.intro{background:var(--capri);text-align:center}
+.intro p.lead{font-size:clamp(19px,2.4vw,24px);max-width:760px;margin:0 auto 48px;color:var(--choc);line-height:1.6}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:720px;margin:0 auto}
+.stats b{display:block;font-family:Montserrat,sans-serif;font-weight:400;font-size:clamp(26px,4vw,40px);color:var(--choc);letter-spacing:.04em}
+.stats span{font-size:11px}
+.partners{margin-top:44px;color:var(--sea)}
 
-  /* nav */
-  #nav{position:fixed;top:0;left:0;right:0;z-index:50;height:56px;background:rgba(247,243,236,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(85,61,47,.12)}
-  #nav a.nl{font-family:Montserrat,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.18em;font-size:11px;color:var(--ink);text-decoration:none;padding:6px 0;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
-  #nav a.nl.active{border-bottom-color:var(--choc);color:var(--choc)}
+/* concepts */
+.concepts{background:var(--choc);color:var(--capri)}
+.concepts h2,.rates h2{font-size:clamp(20px,2.6vw,28px);margin:14px 0 48px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.card .ph{aspect-ratio:3/4;overflow:hidden;margin-bottom:20px}
+.card h3{font-size:14px;margin-bottom:10px}
+.card p{font-size:15.5px;opacity:.88}
+.note{margin-top:40px;font-size:14px;opacity:.7}
 
-  /* reveal */
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}
-  .reveal.in{opacity:1;transform:none}
-  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
-  @media print{
-    .reveal{opacity:1!important;transform:none!important}
-    #nav{display:none}
-    section{break-inside:avoid-page}
-  }
+/* rates */
+.rates{background:var(--ivory)}
+.tier{border:1px solid rgba(85,61,47,.25);padding:36px 28px;display:flex;flex-direction:column}
+.tier.sig{background:var(--choc);color:var(--capri);border-color:var(--choc)}
+.tier .price{font-family:Montserrat,sans-serif;font-size:34px;font-weight:400;letter-spacing:.04em;margin:14px 0 22px}
+.tier ul{list-style:none;font-size:15.5px}
+.tier li{padding:9px 0;border-top:1px solid rgba(85,61,47,.15)}
+.tier.sig li{border-color:rgba(226,239,248,.2)}
+.tag{display:inline-block;background:var(--capri);color:var(--choc);padding:4px 10px;margin-bottom:14px;align-self:flex-start}
+.small{margin-top:36px;font-size:14px;color:#5a4a40;max-width:760px}
 
-  /* cover */
-  .cover{min-height:100vh;min-height:100svh;display:grid;grid-template-columns:1fr}
-  .cover-img{height:62svh;min-height:380px}
-  @media (min-width:900px){
-    .cover{grid-template-columns:1.05fr 1fr}
-    .cover-img{height:auto;min-height:100vh;order:2}
-  }
+/* close */
+.close{position:relative;color:#fff;text-align:center;padding:140px 0}
+.close .bg{position:absolute;inset:0}
+.close::after{content:"";position:absolute;inset:0;background:rgba(40,30,24,.55)}
+.close .in{position:relative;z-index:1}
+.close h2{font-size:clamp(24px,4vw,42px);margin-bottom:16px}
+.close p{max-width:520px;margin:0 auto 34px;font-size:18px}
+.btn{display:inline-block;font-family:Montserrat,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.16em;font-size:12px;padding:16px 28px;background:#fff;color:var(--ink);text-decoration:none;margin:6px}
+.btn.o{background:transparent;color:#fff;border:1px solid #fff}
+.btn:hover{background:var(--capri);color:var(--choc)}
+footer{text-align:center;padding:28px;background:var(--ink);color:var(--capri)}
 
-  /* tiers */
-  .tier{width:100%;display:flex;flex-direction:column;background:#fff;border:1px solid rgba(85,61,47,.15);padding:34px 28px}
-  .tier.sig{background:var(--choc);color:var(--capri);border-color:var(--choc)}
-  .tier ul{list-style:none;padding:0;margin:22px 0 0}
-  .tier li{position:relative;padding-left:20px;margin:0 0 11px;font-size:15.5px;line-height:1.55}
-  .tier li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1px;background:currentColor;opacity:.7}
-  .price{font-family:Montserrat,sans-serif;font-weight:500;letter-spacing:.06em;font-size:40px;line-height:1}
-
-  .contact a{color:var(--capri);font-weight:700;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;word-break:break-word}
-  .contact a:hover{color:#fff}
-
-  .logo-row img{height:30px;width:auto;max-width:130px;object-fit:contain;filter:grayscale(1) brightness(.35);opacity:.8;transition:opacity .2s}
-  .logo-row img:hover{opacity:1}
-  .logo-row .fallback{display:none;font-family:Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:11px}
-
-  .pill{display:inline-block;font-family:Montserrat,sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.16em;font-size:10px;padding:7px 12px;border:1px solid currentColor}
+@media (max-width:820px){
+  section{padding:72px 0}
+  .grid3{grid-template-columns:minmax(0,1fr);gap:40px}
+  .card .ph{aspect-ratio:4/5}
+  .stats{gap:8px}
+  .hero .in{padding-bottom:56px}
+}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<header id="nav">
-  <div class="max-w-container mx-auto h-full px-5 md:px-8 flex items-center justify-between gap-6">
-    <a href="#cover" class="flex items-center gap-3 no-underline text-ink" aria-label="Back to top">
-      <img src="logos/wiskii-ink.png" alt="WISKII" style="height:15px;width:auto">
-      <span class="kicker" style="font-size:10px">x Callie Rounds</span>
-    </a>
-    <nav class="hidden md:flex items-center gap-7">
-      <a class="nl" href="#callie">Callie</a>
-      <a class="nl" href="#why">Why WISKII</a>
-      <a class="nl" href="#concepts">Concepts</a>
-      <a class="nl" href="#investment">Investment</a>
-      <a class="nl" href="#contact">Contact</a>
-    </nav>
-    <a class="nl md:hidden" href="#contact">Contact</a>
+<header class="hero">
+  <div class="bg"><picture><source media="(min-width:821px)" srcset="ph/hero-wide.jpg"><img src="ph/hero.jpg" alt=""></picture></div>
+  <div class="top"><span class="k">WISKII x Callie Rounds</span><a class="k" href="#contact" style="color:#fff;text-decoration:none">Contact</a></div>
+  <div class="in">
+    <span class="k">A collaboration proposal</span>
+    <h1 class="h">Finesse,<br>in freefall.</h1>
+    <p>A collaboration proposal for WISKII, for the moments worth dressing for.</p>
   </div>
 </header>
 
-<!-- 1. COVER -->
-<section id="cover" class="cover bg-capri">
-  <div class="cover-img ph grain">
-    <img class="film" src="img/cover-wing.jpg" alt="Callie sitting on the wing of an aircraft above a coastline at dawn" style="object-position:50% 30%">
-  </div>
-  <div class="flex items-center px-6 sm:px-10 md:px-16 py-14 md:py-24">
-    <div class="max-w-[520px] reveal">
-      <p class="kicker text-choc mb-8">A collaboration proposal</p>
-      <div class="flex items-center gap-4 flex-wrap mb-10">
-        <img src="logos/wiskii-choc.png" alt="WISKII" style="height:34px;width:auto">
-        <span class="h text-choc" style="font-size:13px">x</span>
-        <span class="h text-choc" style="font-size:15px">Callie Rounds</span>
-      </div>
-      <h1 class="h text-ink" style="font-size:clamp(26px,4.4vw,44px);letter-spacing:.16em">Dare to dream.<br>Live boldly.</h1>
-      <div class="rule text-choc my-8"></div>
-      <p class="text-[17px] md:text-[18px] text-ink/80 max-w-[440px]">Three ideas for taking WISKII's own promise off the ground and into the sky, worn by a woman who skydives for real.</p>
-      <a href="#callie" class="btn mt-10">View the proposal</a>
+<section class="intro">
+  <div class="wrap">
+    <p class="lead">I'm an adventure creator and skydiver, and I'd love to bring WISKII into the boldest moments I film, where the set has to look as good as it performs.</p>
+    <div class="stats">
+      <div><b>700</b><span class="k">Skydives</span></div>
+      <div><b>33+</b><span class="k">Countries filmed</span></div>
+      <div><b>514K</b><span class="k">Instagram audience</span></div>
     </div>
+    <p class="k partners">Insta360 &nbsp;·&nbsp; DJI &nbsp;·&nbsp; Royal Caribbean &nbsp;·&nbsp; Relais &amp; Châteaux &nbsp;·&nbsp; Lexar</p>
   </div>
 </section>
 
-<!-- 2. WHY CALLIE -->
-<section id="callie" class="py-20 md:py-32">
-  <div class="max-w-container mx-auto px-5 md:px-8">
-    <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-      <figure class="ph grain reveal" style="aspect-ratio:4/5;max-width:460px">
-        <img class="film" src="img/callie-portrait.jpg" alt="Callie at golden hour in front of a snow-capped mountain">
-      </figure>
-      <div class="reveal">
-        <p class="kicker text-choc mb-5">01 / Why Callie</p>
-        <h2 class="h mb-8" style="font-size:clamp(22px,3vw,32px)">Hi, I'm Callie</h2>
-        <p class="mb-5 text-ink/85">I'm an extreme sports creator, a skydiver, freediver, paraglider and climber, and I've filmed in more than 33 countries, from freefall to twenty meters below the surface of the ocean.</p>
-        <p class="text-ink/85">I thrive creating content in the conditions most people never film in, and I love helping brands show up in places most people only ever see from the ground.</p>
-        <div class="grid grid-cols-3 gap-4 mt-12 pt-10 border-t border-choc/20">
-          <div>
-            <div class="h text-choc" style="font-size:clamp(22px,3.2vw,34px);letter-spacing:.06em"><span class="count" data-target="700" data-prefix="~">~700</span></div>
-            <p class="kicker mt-2 text-ink/60" style="font-size:9.5px;line-height:1.6">Skydives</p>
-          </div>
-          <div>
-            <div class="h text-choc" style="font-size:clamp(22px,3.2vw,34px);letter-spacing:.06em"><span class="count" data-target="33" data-suffix="+">33+</span></div>
-            <p class="kicker mt-2 text-ink/60" style="font-size:9.5px;line-height:1.6">Countries filmed</p>
-          </div>
-          <div>
-            <div class="h text-choc" style="font-size:clamp(22px,3.2vw,34px);letter-spacing:.06em"><span class="count" data-target="514" data-suffix="K">514K</span></div>
-            <p class="kicker mt-2 text-ink/60" style="font-size:9.5px;line-height:1.6">Instagram audience</p>
-          </div>
-        </div>
+<section class="concepts" id="concepts">
+  <div class="wrap">
+    <span class="k">Concepts</span>
+    <h2 class="h">Moments worth dressing for</h2>
+    <div class="grid3">
+      <div class="card">
+        <div class="ph"><img src="ph/c1.jpg" alt=""></div>
+        <h3 class="h">01 &nbsp;The helicopter jump</h3>
+        <p>A skydive from a helicopter in a matching set, filmed in freefall and shot by a pro photographer.</p>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="ph/c2.jpg" alt=""></div>
+        <h3 class="h">02 &nbsp;The hang</h3>
+        <p>Hanging beneath a helicopter above open water, photographed from the ground.</p>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="ph/c3.jpg" alt=""></div>
+        <h3 class="h">03 &nbsp;The balloon jump</h3>
+        <p>A sunrise exit from a hot air balloon over the countryside, in your softest tones.</p>
       </div>
     </div>
-
-    <!-- disciplines strip -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-20 md:mt-28">
-      <figure class="reveal">
-        <div class="ph grain" style="aspect-ratio:4/5"><img class="film" src="img/skydive.jpg" alt="Callie in freefall beside a skydiving aircraft" style="object-position:50% 40%"></div>
-        <figcaption class="kicker mt-4 text-ink/60">In the sky</figcaption>
-      </figure>
-      <figure class="reveal">
-        <div class="ph grain" style="aspect-ratio:4/5"><img class="film" src="img/freedive.jpg" alt="Callie freediving above a tiger shark"></div>
-        <figcaption class="kicker mt-4 text-ink/60">Under the water</figcaption>
-      </figure>
-      <figure class="reveal">
-        <div class="ph grain" style="aspect-ratio:4/5"><img class="film" src="img/climb.jpg" alt="Callie climbing a rock face above the clouds" style="object-position:50% 55%"></div>
-        <figcaption class="kicker mt-4 text-ink/60">On the rock</figcaption>
-      </figure>
-    </div>
-
-    <!-- partners -->
-    <div class="mt-20 md:mt-28 text-center reveal">
-      <p class="kicker text-choc mb-4">Past paid partners</p>
-      <p class="max-w-[640px] mx-auto text-ink/75 text-[16px] mb-10">Highlights include featured talent in Insta360's global X5 launch, filmed in Cape Town, and more than two years of ongoing work with Relais &amp; Ch&acirc;teaux and Lexar.</p>
-      <div class="logo-row grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-9 items-center justify-items-center max-w-[980px] mx-auto">
-        <img src="logos/insta360-trim.png" alt="Insta360" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback">Insta360</span>
-        <img src="logos/dji-trim.png" alt="DJI" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback">DJI</span>
-        <img src="logos/royalcaribbean-trim.png" alt="Royal Caribbean" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback">Royal Caribbean</span>
-        <img src="logos/relais-trim.png" alt="Relais &amp; Chateaux" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback">Relais &amp; Ch&acirc;teaux</span>
-        <img src="logos/lexar-trim.png" alt="Lexar" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback">Lexar</span>
-        <img src="logos/airalo-trim.png" alt="Airalo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="fallback">Airalo</span>
-      </div>
-    </div>
+    <p class="note">Each concept is scoped and quoted separately, since aircraft and locations vary.</p>
   </div>
 </section>
 
-<!-- 3. WHY WISKII + CALLIE -->
-<section id="why" class="bg-choc text-capri py-20 md:py-32">
-  <div class="max-w-container mx-auto px-5 md:px-8">
-    <div class="max-w-[760px] reveal">
-      <p class="kicker mb-5" style="opacity:.75">02 / Why WISKII + @callie.rounds</p>
-      <h2 class="h mb-8" style="font-size:clamp(20px,2.8vw,30px)">Inner fire, outer finesse</h2>
-      <p class="text-capri/90 text-[17px] md:text-[18px]">WISKII was born from the belief that modern women deserve activewear that reflects both their inner fire and their outer finesse. The sky is where that idea can be seen most clearly, because a set that stays in place and still looks beautiful in freefall shows Chic &amp; Active at its boldest and lets your Dare to Dream, Live Boldly promise be seen being lived for real.</p>
-    </div>
-
-    <!-- moodboard: the one WISKII-imagery moment -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-14 md:mt-20">
-      <figure class="reveal">
-        <div class="ph grain" style="aspect-ratio:2/3"><img src="img/wiskii-countryside.jpg" alt="WISKII campaign, brown and teal sets in the countryside"></div>
-        <figcaption class="kicker mt-3" style="font-size:9.5px;opacity:.6">WISKII</figcaption>
-      </figure>
-      <figure class="reveal">
-        <div class="ph grain" style="aspect-ratio:2/3"><img src="img/wiskii-vintage-car.jpg" alt="WISKII Riviera tennis campaign with a vintage car"></div>
-        <figcaption class="kicker mt-3" style="font-size:9.5px;opacity:.6">WISKII</figcaption>
-      </figure>
-      <figure class="reveal">
-        <div class="ph grain" style="aspect-ratio:2/3"><img src="img/wiskii-horse.jpg" alt="WISKII About page image, a handstand on horseback" style="object-position:40% 50%"></div>
-        <figcaption class="kicker mt-3" style="font-size:9.5px;opacity:.6">WISKII</figcaption>
-      </figure>
-      <figure class="reveal">
-        <div class="ph grain" style="aspect-ratio:2/3"><img class="film" src="img/ibiza.jpg" alt="Callie on a cliff above the sea in Ibiza" style="object-position:50% 60%"></div>
-        <figcaption class="kicker mt-3" style="font-size:9.5px;opacity:.6">@callie.rounds</figcaption>
-      </figure>
-    </div>
-
-    <blockquote class="mt-16 md:mt-24 text-center reveal">
-      <p class="h" style="font-size:clamp(17px,2.4vw,26px)">"We surf, we freedive, we snowboard."</p>
-      <p class="kicker mt-5" style="opacity:.6">From the WISKII About page</p>
-      <p class="max-w-[560px] mx-auto mt-7 text-capri/85">I freedive too, and I would love to help add the sky to that list.</p>
-    </blockquote>
-
-    <div class="grid md:grid-cols-3 gap-10 md:gap-12 mt-16 md:mt-24 pt-12 border-t" style="border-color:rgba(226,239,248,.2)">
-      <div class="reveal">
-        <p class="h mb-4" style="font-size:13px">Sportsglam, proven in motion</p>
-        <p class="text-capri/80 text-[15.5px]">Your sets are made to sculpt and stay in place, and freefall is one of the most honest places to show that, while still looking stunning on camera.</p>
-      </div>
-      <div class="reveal">
-        <p class="h mb-4" style="font-size:13px">Warm, cinematic, elegant</p>
-        <p class="text-capri/80 text-[15.5px]">Every shoot is styled around your palette and shot with a professional photographer, so the result sits comfortably beside your Riviera and countryside campaigns.</p>
-      </div>
-      <div class="reveal">
-        <p class="h mb-4" style="font-size:13px">A new story for WISKII Girls</p>
-        <p class="text-capri/80 text-[15.5px]">Seeing a woman wear WISKII while she lives the tagline gives your community a story that goes beyond the studio and the court.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 4. CONCEPTS -->
-<section id="concepts" class="py-20 md:py-32">
-  <div class="max-w-container mx-auto px-5 md:px-8">
-    <div class="max-w-[680px] reveal">
-      <p class="kicker text-choc mb-5">03 / Concepts</p>
-      <h2 class="h mb-6" style="font-size:clamp(22px,3vw,32px)">Three ideas</h2>
-      <p class="text-ink/80">Each idea is shot alongside a professional photographer and edited in a warm, cinematic style that fits WISKII's world.</p>
-    </div>
-
-    <!-- A -->
-    <article class="grid md:grid-cols-2 gap-10 md:gap-16 items-center mt-16 md:mt-24">
-      <figure class="ph grain reveal" style="aspect-ratio:1/1">
-        <img class="film" src="img/freefall-white.jpg" alt="Callie in freefall in a white top against a pale blue sky" style="object-position:55% 50%">
-      </figure>
-      <div class="reveal">
-        <p class="kicker text-choc mb-4">Concept 01</p>
-        <h3 class="h mb-5" style="font-size:clamp(18px,2.2vw,24px)">The helicopter skydive</h3>
-        <p class="text-ink/80 mb-6">I jump from a helicopter in a matching WISKII set and fall through open sky, filmed in freefall for a cinematic edit, while a professional photographer captures editorial stills before and after the jump.</p>
-        <span class="pill text-sea">Cinematic Reel and editorial stills</span>
-      </div>
-    </article>
-
-    <!-- B -->
-    <article class="grid md:grid-cols-2 gap-10 md:gap-16 items-center mt-20 md:mt-28">
-      <figure class="ph grain reveal md:order-2" style="aspect-ratio:4/5">
-        <img class="film" src="img/heli-skid.jpg" alt="Callie on the skid of a helicopter high above a coastline" style="object-position:50% 35%">
-      </figure>
-      <div class="reveal md:order-1">
-        <p class="kicker text-choc mb-4">Concept 02 / The wildcard</p>
-        <h3 class="h mb-5" style="font-size:clamp(18px,2.2vw,24px)">The helicopter hang</h3>
-        <p class="text-ink/80 mb-6">I hang from beneath a helicopter as it flies over the water, dressed in WISKII, while a professional photographer shoots the whole scene from the ground so it reads like a fashion editorial.</p>
-        <span class="pill text-sea">Editorial photo carousel</span>
-      </div>
-    </article>
-
-    <!-- C -->
-    <article class="grid md:grid-cols-2 gap-10 md:gap-16 items-center mt-20 md:mt-28">
-      <figure class="ph grain reveal" style="aspect-ratio:4/5">
-        <img class="film" src="img/balloon.jpg" alt="Callie in her skydiving rig in front of a hot air balloon at dawn" style="object-position:62% 50%">
-      </figure>
-      <div class="reveal">
-        <p class="kicker text-choc mb-4">Concept 03</p>
-        <h3 class="h mb-5" style="font-size:clamp(18px,2.2vw,24px)">The sunrise balloon jump</h3>
-        <p class="text-ink/80 mb-6">I jump from a hot air balloon at sunrise, styled in WISKII's softer colors like Ivory and Capri Serenity, so the early light and the slow climb before the exit become part of the film.</p>
-        <span class="pill text-sea">Sunrise Reel</span>
-      </div>
-    </article>
-
-    <p class="mt-20 md:mt-24 text-center text-ink/60 text-[15px] max-w-[560px] mx-auto reveal">Each concept is scoped and quoted per shoot, because locations, aircraft and permits vary from place to place.</p>
-  </div>
-</section>
-
-<!-- 5. INVESTMENT -->
-<section id="investment" class="bg-capri py-20 md:py-32">
-  <div class="max-w-container mx-auto px-5 md:px-8">
-    <div class="max-w-[680px] reveal">
-      <p class="kicker text-choc mb-5">04 / Investment</p>
-      <h2 class="h mb-6" style="font-size:clamp(22px,3vw,32px)">Ways to work together</h2>
-      <p class="text-ink/80">Every option is professionally shot and edited, and includes one post on @callie.rounds, which can be a collab Reel, a collab carousel or a trial Reel.</p>
-    </div>
-
-    <div class="grid lg:grid-cols-3 gap-5 mt-14 items-stretch">
-      <div class="tier reveal">
-        <p class="kicker text-choc">The collab</p>
-        <p class="price mt-5">$6,500</p>
+<section class="rates" id="rates">
+  <div class="wrap">
+    <span class="k" style="color:var(--sea)">Rates</span>
+    <h2 class="h" style="color:var(--choc)">Ways to work together</h2>
+    <div class="grid3">
+      <div class="tier">
+        <span class="k">The Edit</span>
+        <div class="price">$6,500</div>
         <ul>
-          <li>One professionally shot and edited Reel or carousel</li>
-          <li>Posted as a collab on @callie.rounds</li>
-          <li>30 days for WISKII to repost it on its own channels</li>
+          <li>Professionally shot and edited</li>
+          <li>One collab Reel or carousel</li>
+          <li>30 days of reposting on your channels</li>
         </ul>
       </div>
-
-      <div class="tier sig reveal">
-        <div class="flex items-center justify-between gap-3">
-          <p class="kicker">The full shoot</p>
-          <span class="pill" style="font-size:9px;padding:5px 9px">Recommended</span>
-        </div>
-        <p class="price mt-5">$10,000</p>
+      <div class="tier sig">
+        <span class="k tag">Signature</span>
+        <span class="k">The Full Package</span>
+        <div class="price">$10,000</div>
         <ul>
-          <li>The full shoot with a professional photographer</li>
-          <li>Professional editing</li>
-          <li>All raw and edited photos and footage delivered to you</li>
-          <li>One collab Reel or carousel on @callie.rounds</li>
-          <li>Six months of use on WISKII's own channels and website</li>
+          <li>Full shoot with professional editing</li>
+          <li>All raw and edited material delivered</li>
+          <li>One collab Reel or carousel</li>
+          <li>6 months of use on your channels and site</li>
         </ul>
       </div>
-
-      <div class="tier reveal">
-        <p class="kicker text-choc">The campaign</p>
-        <p class="price mt-5">$18,000</p>
+      <div class="tier">
+        <span class="k">The Campaign</span>
+        <div class="price">$18,000</div>
         <ul>
-          <li>Everything in the full shoot</li>
-          <li>Guaranteed 1 million views, delivered through trial Reels shown to people who don't yet follow me, tagging @wiskiiactive with the caption of your choice</li>
-          <li>Three story frames with a link</li>
-          <li>90 days of paid ad usage (whitelisting)</li>
+          <li>Everything in the Full Package</li>
+          <li>Guaranteed 1 million views through trial Reels, tagging @wiskiiactive with your caption</li>
+          <li>3 story frames with link</li>
+          <li>90 days of paid ad usage</li>
         </ul>
       </div>
     </div>
-
-    <div class="mt-8 text-center text-ink/70 text-[15px] max-w-[720px] mx-auto reveal">
-      <p>Story frames can be added to any option. Reduced rates are available for 3 to 6 month partnerships with monthly content.</p>
-      <p class="mt-2">Production costs for each concept, such as aircraft hire and permits, are quoted separately on top.</p>
-    </div>
-
-    <div class="mt-20 md:mt-28 reveal">
-      <p class="kicker text-choc mb-10 text-center">What the investment covers</p>
-      <div class="grid md:grid-cols-3 gap-10 md:gap-12">
-        <div>
-          <p class="h mb-4" style="font-size:13px">A full content library</p>
-          <p class="text-ink/75 text-[15.5px]">One shoot delivers every raw and edited file, so a single day of production can keep feeding your website, emails and social channels for months.</p>
-        </div>
-        <div>
-          <p class="h mb-4" style="font-size:13px">Professional photography</p>
-          <p class="text-ink/75 text-[15.5px]">A professional photographer shoots editorial stills alongside the freefall footage, styled to sit next to your existing campaigns.</p>
-        </div>
-        <div>
-          <p class="h mb-4" style="font-size:13px">Reach and rare footage</p>
-          <p class="text-ink/75 text-[15.5px]">My Reels reach millions of people beyond my own following, which puts this collaboration in the top 1% of WISKII's creator partners by reach, with footage of your sets in freefall that very few activewear brands have.</p>
-        </div>
-      </div>
-    </div>
+    <p class="small">Story frames can be added to any tier. Reduced monthly rates are available for 3 to 6 month partnerships.</p>
   </div>
 </section>
 
-<!-- 6. CLOSE -->
-<section id="contact" class="bg-choc text-capri py-24 md:py-36">
-  <div class="max-w-[720px] mx-auto px-6 text-center reveal">
-    <img src="logos/wiskii-blue.png" alt="WISKII" class="mx-auto" style="height:30px;width:auto;opacity:.9">
-    <div class="rule mx-auto my-10"></div>
-    <h2 class="h mb-8" style="font-size:clamp(20px,2.8vw,30px)">Let's dream it up together</h2>
-    <p class="text-capri/85 text-[17px] md:text-[18px]">Thank you for reaching out. I would love to create something with WISKII that lives up to your Dare to Dream, Live Boldly promise. If any of these ideas feel right, let's see what we can dream up together :)</p>
-    <div class="contact mt-12 space-y-3 text-[17px]">
-      <p><a href="mailto:caliroundspartnerships@gmail.com">caliroundspartnerships@gmail.com</a></p>
-      <p><a href="https://www.instagram.com/callie.rounds/" target="_blank" rel="noopener">@callie.rounds</a></p>
-    </div>
-    <p class="kicker mt-16" style="opacity:.5;font-size:10px">Callie Rounds for WISKII</p>
+<section class="close" id="contact">
+  <div class="bg"><img src="ph/close.jpg" alt=""></div>
+  <div class="in wrap">
+    <h2 class="h">Let's make something bold</h2>
+    <p>Tell me which moment speaks to you and I'll put together the details.</p>
+    <a class="btn" href="mailto:callierounds@gmail.com">Email Callie</a>
+    <a class="btn o" href="https://instagram.com/callie.rounds" target="_blank" rel="noopener">@callie.rounds</a>
   </div>
 </section>
 
-<script>
-(function(){
-  // scroll-reveal: IntersectionObserver + sweep() fallback so jumped-to sections never stay blank
-  var els=[].slice.call(document.querySelectorAll('.reveal'));
-  function show(el){el.classList.add('in')}
-  function sweep(){
-    var h=window.innerHeight;
-    els.forEach(function(el){ if(el.classList.contains('in')) return;
-      var r=el.getBoundingClientRect(); if(r.top<h*0.92 && r.bottom>0) show(el); });
-  }
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
-    els.forEach(function(el){io.observe(el)});
-  } else { els.forEach(show); }
-  ['scroll','resize','hashchange','load'].forEach(function(ev){window.addEventListener(ev,sweep,{passive:true})});
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(){setTimeout(sweep,60);setTimeout(sweep,700)})});
-  window.addEventListener('beforeprint',function(){els.forEach(show)});
-  sweep();
-
-  // count-up (suffix/prefix live ONLY in data attributes)
-  var counted=false;
-  function countUp(){
-    if(counted) return;
-    var first=document.querySelector('.count'); if(!first) return;
-    var r=first.getBoundingClientRect(); if(r.top>window.innerHeight*0.95) return;
-    counted=true;
-    document.querySelectorAll('.count').forEach(function(el){
-      var t=+el.dataset.target, p=el.dataset.prefix||'', s=el.dataset.suffix||'', d=1400, st=null;
-      function step(ts){ if(!st) st=ts; var k=Math.min((ts-st)/d,1); k=1-Math.pow(1-k,3);
-        el.textContent=p+Math.round(t*k)+s; if(k<1) requestAnimationFrame(step); }
-      requestAnimationFrame(step);
-    });
-  }
-  window.addEventListener('scroll',countUp,{passive:true}); window.addEventListener('load',countUp); countUp();
-
-  // active nav
-  var links=[].slice.call(document.querySelectorAll('#nav a.nl'));
-  var secs=['callie','why','concepts','investment','contact'].map(function(id){return document.getElementById(id)});
-  function active(){
-    var y=window.scrollY+window.innerHeight*0.35, cur=null;
-    secs.forEach(function(s){ if(s && s.offsetTop<=y) cur=s.id; });
-    links.forEach(function(l){ l.classList.toggle('active', cur && l.getAttribute('href')==='#'+cur); });
-  }
-  window.addEventListener('scroll',active,{passive:true}); active();
-})();
-</script>
+<footer><span class="k">WISKII x Callie Rounds</span></footer>
 </body>
 </html>
